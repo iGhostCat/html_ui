@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+    .bg-indigo-400 {
+        background-color: #7E57C2; /* Индиго 400 */
+    }
+    .bg-indigo-400 .nav-link {
+        color: white !important;
+    }
+    .bg-indigo-400 .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+  </head>
+  <body>
+    <div class="container">
+            <!-- Шапка меню с картинкой и заголовок страницы -->
+            <div class="row">
+                 <div class = "col-1 bg-indigo-400">
+                    <img src="../css/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    
+                </div>
+               
+                <div class = "col-2 bg-indigo-400">
+                    Меню
+                </div>
+                
+                        <div class="border-bottom">
+                          
+                        </div>
+
+                
+
+            </div>
+            <!-- Боковое меню и основной контент страницы -->
+             <div class="row">
+                <div class = "col-3 bg-indigo-400">
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-house"></i> Главная
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-grid"></i> Категории
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-people"></i> Заказы
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bar-chart"></i> Контакты
+                        </a>
+
+                    </nav>
+                </div>
+                <div class="col-9">
+                    <div class = "text-center mt-5">
+                        <h1 >Главная</h1>
+                    </div>
+                    <div class = "text-center mt-1">
+                        <h10 class="text-muted" >Вы находитесь на сайте, предназначенном для продажи товаров</h10>
+                    </div>
+                </div>
+             </div>
+              <!-- Товары и пустое место в меню -->
+               <div class="row">
+                    <div class = "col-3 bg-indigo-400">
+
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" >
+                            <div class="card-header bg-secondary text-black py-3 text-center">Товар 3</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">$100</h5>
+                                <p class="card-text text-center">Описание товара</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header bg-secondary text-black py-3 text-center">Товар 3</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">$100</h5>
+                                <p class="card-text text-center">Описание товара</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header bg-secondary text-black py-3 text-center">Товар 3</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">$100</h5>
+                                <p class="card-text text-center">Описание товара</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
+    </div>
+                 <!-- Кнопки профиля, выхода и иконки пользователя -->
+            <div class="row">
+                <div class = "col-3 bg-indigo-400">
+                    <div class="dropdown">
+                        <button class="btn btn-bg-indigo-400 dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Пользователь
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
