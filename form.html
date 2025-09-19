@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .bg-indigo-400 {
+            background-color: #7E57C2;
+            min-height: 100vh;
+            height: 100%;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 25%; /* Ширина меню */
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .main-content {
+            margin-left: 25%; /* Отступ равен ширине меню */
+            min-height: 100vh;
+        }
+        .nav-link {
+            color: white !important;
+            padding: 12px 20px;
+            margin: 4px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .nav-link i {
+            width: 24px;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 25%;
+            right: 0;
+            z-index: 999;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .content-wrapper {
+            margin-top: 80px; /* Отступ под шапку */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Боковое меню (фиксированное) -->
+    <div class="sidebar bg-indigo-400">
+        <!-- Логотип и название -->
+        <div class="p-3 border-bottom border-white border-opacity-25">
+            <div class="d-flex align-items-center">
+                <img src="../css/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="me-2">
+                <span class="text-white fw-bold">Меню</span>
+            </div>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="nav flex-column p-3">
+            <a class="nav-link active" href="#">
+                <i class="bi bi-house"></i> Главная
+            </a>
+            <a class="nav-link" href="#">
+                <i class="bi bi-grid"></i> Категории
+            </a>
+            <a class="nav-link" href="#">
+                <i class="bi bi-people"></i> Заказы
+            </a>
+            <a class="nav-link" href="#">
+                <i class="bi bi-bar-chart"></i> Контакты
+            </a>
+        </nav>
+
+        <!-- Профиль пользователя (внизу меню) -->
+        <div class="mt-auto p-3">
+            <div class="dropdown">
+                <button class="btn btn-outline-light w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person-circle"></i> Пользователь
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Профиль</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент (прокручивается отдельно) -->
+    <div class="main-content">
+        <!-- Шапка контента -->
+        <div class="header p-3 text-center">
+            <div class="container-fluid">
+                <h1 class="h3 mb-0 ">Главная</h1>
+                <small class="text-muted ">Вы находитесь на сайте, предназначенном для продажи товаров</small>
+            </div>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></script>
+</body>
+</html>
